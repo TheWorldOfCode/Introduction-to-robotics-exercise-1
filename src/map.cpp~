@@ -1,0 +1,15 @@
+#include "../includes/map2D.hpp" 
+
+map2D::map2D(std::string filename, std::string windowName)
+{ 
+     map = cv::imread(filename); 
+     name_window = windowName;    
+} 	
+
+
+void map2D::show_map()
+{
+   cv::namedWindow(name_window, cv::WINDOW_AUTOSIZE);
+   cv::imshow(name_window, map); 
+} 	
+

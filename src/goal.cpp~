@@ -1,0 +1,22 @@
+#include "../includes/goal.hpp"
+
+goal::goal(int position_x, int position_y, cv::Vec3b Color)
+{
+  x = position_x;
+  y = position_y;
+  color = Color;
+} 	
+
+
+bool goal::at_goal(int x_r, int y_r)
+{
+  return x == x_r && y == y_r;
+} 	
+
+void goal::draw_goal_on_map(map2D & map)
+{
+    map.draw_circle(x,y,color); 
+} 	
+
+goal::~goal(){}  
+

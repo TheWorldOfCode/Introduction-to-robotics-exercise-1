@@ -1,0 +1,54 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dajak17/Documents/uni/course/Robots i kontekt/exercise/lection1/includes/map2D.hpp
+opencv2/opencv.hpp
+-
+string.h
+-
+
+/home/dajak17/Documents/uni/course/Robots i kontekt/exercise/lection1/includes/position.hpp
+opencv2/opencv.hpp
+-
+map2D.hpp
+/home/dajak17/Documents/uni/course/Robots i kontekt/exercise/lection1/includes/map2D.hpp
+
+/home/dajak17/Documents/uni/course/Robots i kontekt/exercise/lection1/includes/robot2D.hpp
+opencv2/opencv.hpp
+-
+position.hpp
+/home/dajak17/Documents/uni/course/Robots i kontekt/exercise/lection1/includes/position.hpp
+map2D.hpp
+/home/dajak17/Documents/uni/course/Robots i kontekt/exercise/lection1/includes/map2D.hpp
+
+/home/dajak17/Documents/uni/course/Robots i kontekt/exercise/lection1/src/main.cpp
+../includes/robot2D.hpp
+/home/dajak17/Documents/uni/course/Robots i kontekt/exercise/lection1/includes/robot2D.hpp
+../includes/map2D.hpp
+/home/dajak17/Documents/uni/course/Robots i kontekt/exercise/lection1/includes/map2D.hpp
+../includes/position.hpp
+/home/dajak17/Documents/uni/course/Robots i kontekt/exercise/lection1/includes/position.hpp
+stdio.h
+-
+
+/home/dajak17/Documents/uni/course/Robots i kontekt/exercise/lection1/src/map2D.cpp
+../includes/map2D.hpp
+/home/dajak17/Documents/uni/course/Robots i kontekt/exercise/lection1/includes/map2D.hpp
+stdio.h
+-
+
+/home/dajak17/Documents/uni/course/Robots i kontekt/exercise/lection1/src/position.cpp
+../includes/position.hpp
+/home/dajak17/Documents/uni/course/Robots i kontekt/exercise/lection1/includes/position.hpp
+
+/home/dajak17/Documents/uni/course/Robots i kontekt/exercise/lection1/src/robot2D.cpp
+../includes/robot2D.hpp
+/home/dajak17/Documents/uni/course/Robots i kontekt/exercise/lection1/includes/robot2D.hpp
+stdio.h
+-
+

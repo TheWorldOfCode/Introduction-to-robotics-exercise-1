@@ -1,0 +1,23 @@
+#pragma once
+#include <opencv2/opencv.hpp>
+#include <string.h> 
+
+
+class map2D 
+{
+	public:
+            map2D(std::string filename, std::string windowName); 
+    void move(int x, int y, cv::Vec3b color);
+    void show_map(); 
+    void save_map(std::string filename); 
+    void set_pixel(int x, int y, cv::Vec3b color);
+    void draw_circle(int x, int y, cv::Vec3b color, int size = 5, int thickness = 6); 
+    void draw_line(int startx, int starty, int endx, int endy, cv::Vec3b color, int lineType = 8, int thickness = 6); 
+    cv::Vec3b check_pixel(int x,  int y);  
+    ~map2D(); 
+	private:
+    cv::Mat map;
+    std::string name_window;
+
+};
+

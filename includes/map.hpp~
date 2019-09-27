@@ -1,0 +1,16 @@
+#include <opencv2/opencv.hpp>
+#include <string.h> 
+
+
+class map2D 
+{
+	public:
+    map2D(std::string filename); 
+    void move(int x, int y);
+    int check_pixel(int x,  int y);  
+    ~map2D(); 
+	private:
+    cv::Mat map;
+
+};
+

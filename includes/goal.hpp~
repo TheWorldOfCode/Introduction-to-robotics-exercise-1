@@ -1,0 +1,16 @@
+#pragma once
+#include<opencv2/opencv.hpp>
+#include "map2D.hpp" 
+class goal
+{
+  public:
+      goal(int position_x, int position_y, cv::Vec3b Color);
+      bool at_goal(int x, int y); 
+      void draw_goal_on_map(map2D & map); 
+      ~goal();  
+  private:
+	  int x;
+	  int y;
+	  cv::Vec3b color;
+
+}; 
